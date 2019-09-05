@@ -1,0 +1,147 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+header #kotei {
+	position: fixed;
+}
+
+global_navi {
+	margin-bottom: 16px;
+}
+
+#global_navi ul {
+	font-size: 0;
+	/*半角スペース削除*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#global_navi ul li {
+	font-size: 14px;
+	/*フォントサイズ復活*/
+	display: inline-block;
+	width: 163px;
+	margin-right: 1px;
+	text-align: center;
+}
+
+section {
+	height: 1000px;
+}
+
+
+
+
+
+.split-box {
+	position: absolute;
+	width: 50%;
+	height: 90%;
+	padding: 1em;
+}
+
+.left-box {
+	
+	left: 0;
+	background: #000000;
+	color: #ffffff;
+}
+
+.right-box {
+	right: 0;
+	overflow-y: scroll;
+	background: #ffffff;
+}
+
+.left-box a {
+	color: #ffffff;
+	display: block;
+}
+
+@media screen and (max-width:600px) {
+	.split-box {
+		position: relative;
+		width: 100%;
+		height: auto;
+
+	}
+
+}
+.main_picture {
+	 width:100%;
+    height:100%;
+}
+
+
+
+#Section_1{
+	margin-bottom: 60px;
+}
+
+/************************スキルアイコン************************/
+
+#Section_2>#skill_icons>figure>img {
+	width: 120px;
+}
+
+#skill_icons {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+#Section_2>#skill_icons>figure>img>figcaption {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.development {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+}
+.development.box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.development img {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+
+.development-items {
+	width: 100%;
+}
