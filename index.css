@@ -1,3 +1,5 @@
+/************************全体************************/
+
 html,
 body {
 	height: 100%;
@@ -9,10 +11,13 @@ body {
 	box-sizing: border-box;
 }
 
+/************************ヘッダー************************/
 
 header #kotei {
 	position: fixed;
 }
+
+/************************ナビゲーション************************/
 
 global_navi {
 	margin-bottom: 16px;
@@ -36,13 +41,7 @@ global_navi {
 	text-align: center;
 }
 
-section {
-	height: 1000px;
-}
-
-
-
-
+/************************画面分割************************/
 
 .split-box {
 	position: absolute;
@@ -52,7 +51,7 @@ section {
 }
 
 .left-box {
-	
+
 	left: 0;
 	background: #000000;
 	color: #ffffff;
@@ -62,6 +61,7 @@ section {
 	right: 0;
 	overflow-y: scroll;
 	background: #ffffff;
+	padding-top: 0;
 }
 
 .left-box a {
@@ -69,24 +69,31 @@ section {
 	display: block;
 }
 
+/************************レスポンシブ************************/
+
 @media screen and (max-width:600px) {
 	.split-box {
 		position: relative;
 		width: 100%;
 		height: auto;
-
 	}
-
 }
+
+/************************メイン画像************************/
+
 .main_picture {
-	 width:100%;
-    height:100%;
+	width: 100%;
+	height: 100%;
 }
 
+/************************ナビ関連************************/
 
-
-#Section_1{
+#Section_1 {
 	margin-bottom: 60px;
+}
+
+#Section_1>h2 {
+	margin-top: 0;
 }
 
 /************************スキルアイコン************************/
@@ -106,41 +113,34 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
+/************************works************************/
 
 .development {
-    position: relative;
-    margin: 2em 0;
-    padding: 0.5em 1em;
-    border: solid 3px #95ccff;
-    border-radius: 8px;
+	position: relative;
+	margin: 2em 0;
+	padding: 0.5em 1em;
+	border: solid 3px #95ccff;
+	border-radius: 8px;
+	box-shadow: 0 0 15px gray;
 }
+
 .development.box-title {
-    position: absolute;
-    display: inline-block;
-    top: -13px;
-    left: 10px;
-    padding: 0 9px;
-    line-height: 1;
-    font-size: 19px;
-    background: #FFF;
-    color: #95ccff;
-    font-weight: bold;
+	position: absolute;
+	display: inline-block;
+	top: -13px;
+	left: 10px;
+	padding: 0 9px;
+	line-height: 1;
+	font-size: 19px;
+	background: #FFF;
+	color: #95ccff;
+	font-weight: bold;
 }
+
 .development img {
-    margin: 0; 
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
-
-
 
 .development-items {
 	width: 100%;
